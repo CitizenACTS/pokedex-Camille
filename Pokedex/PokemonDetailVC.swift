@@ -34,14 +34,42 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLbl.text = pokemon.name
-        mainImg.image = UIImage(named: "\(pokemon.pokedexId)")
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImg.image = img
+        evolve1Lbl.image = img
         
         pokemon.downloadPokemonDetails { () -> () in
             // this will be called after download is done
-            
+            self.UpdateUI()
         
         }
         // Do any additional setup after loading the view.
+    }
+    
+    func UpdateUI() {
+        descriptionLbl.text = pokemon.description
+        TypeLbl.text = pokemon.type
+        DefenceLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weight.text = pokemon.weight
+        pokemonIdLbl.text = "\(pokemon.pokedexId)"
+        baseAttackLbl.text = pokemon.attack
+        
+        if pokemon.nextEvolutionId == "" {
+            evolveLbl.text = "no evolution"
+            evolve2Lbl.hidden = true
+        } else {
+        evolve2Lbl.hidden = false
+        evolve2Lbl.image = UIImage(named: pokemon.nextEvolutionId)
+        var str = "Next Evolution: \(pokemon.nextEvolutionTxt)"
+            if pokemon.nextEvolutionTxt != "" {
+                str += "-LVL \(pokemon.nextEvolutionTxt)"
+                evolveLbl.text = str
+            } else {
+                evolveLbl.text = str
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
