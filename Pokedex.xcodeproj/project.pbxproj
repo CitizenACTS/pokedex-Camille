@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ACAD33761CD74A2600910AA9 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD33751CD74A2600910AA9 /* PokeCell.swift */; };
 		ACAD33791CD7513F00910AA9 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD33781CD7513F00910AA9 /* csv.swift */; };
+		ACAD337D1CD75B7E00910AA9 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACAD337C1CD75B7E00910AA9 /* PokemonSolid.ttf */; };
+		ACAD337F1CD75E3100910AA9 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACAD337E1CD75E3100910AA9 /* music.mp3 */; };
 		ACCB6FB21CD6A26D00528719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB6FB11CD6A26D00528719 /* AppDelegate.swift */; };
 		ACCB6FB41CD6A26D00528719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB6FB31CD6A26D00528719 /* ViewController.swift */; };
 		ACCB6FB71CD6A26D00528719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCB6FB51CD6A26D00528719 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		ACAD33751CD74A2600910AA9 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		ACAD33781CD7513F00910AA9 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		ACAD337C1CD75B7E00910AA9 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
+		ACAD337E1CD75E3100910AA9 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		ACCB6FAE1CD6A26D00528719 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCB6FB11CD6A26D00528719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCB6FB31CD6A26D00528719 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		ACAD337B1CD7517100910AA9 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				ACAD337C1CD75B7E00910AA9 /* PokemonSolid.ttf */,
 				ACCB6FC31CD6A4C100528719 /* pokemon.csv */,
 			);
 			name = Ressources;
@@ -102,6 +107,7 @@
 				ACAD33741CD74A0200910AA9 /* View */,
 				ACAD33771CD74B9000910AA9 /* Controller */,
 				ACCB6FB11CD6A26D00528719 /* AppDelegate.swift */,
+				ACAD337E1CD75E3100910AA9 /* music.mp3 */,
 				ACCB6FB81CD6A26D00528719 /* Assets.xcassets */,
 				ACCB6FBD1CD6A26D00528719 /* Info.plist */,
 			);
@@ -176,7 +182,9 @@
 			files = (
 				ACCB6FBC1CD6A26D00528719 /* LaunchScreen.storyboard in Resources */,
 				ACCB6FB91CD6A26D00528719 /* Assets.xcassets in Resources */,
+				ACAD337F1CD75E3100910AA9 /* music.mp3 in Resources */,
 				ACCB6FC41CD6A4C100528719 /* pokemon.csv in Resources */,
+				ACAD337D1CD75B7E00910AA9 /* PokemonSolid.ttf in Resources */,
 				ACCB6FB71CD6A26D00528719 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
